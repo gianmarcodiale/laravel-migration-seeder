@@ -1,2 +1,20 @@
 //
-@use 'bootstrap';
+@use "bootstrap";
+
+//package.index css
+
+.card {
+    height: 500px;
+    img {
+        height: 300px;
+        aspect-ratio: 1/1;
+    }
+}
+
+//package.show css
+
+.package {
+    .card {
+        height: 680px;
+    }
+}
