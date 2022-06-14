@@ -15,16 +15,17 @@ class CreatePackagesTable extends Migration
     {
         Schema::create('packages', function (Blueprint $table) {
             $table->id();
-            $table->decimal('price', 6, 2)->unsigned();
-            $table->string('location', 30);
+            $table->string('title', 50);
+            $table->integer('price')->unsigned();
+            $table->string('location', 50);
             $table->text('description');
             $table->string('image');
             $table->tinyInteger('people')->unsigned();
             $table->string('departure_date', 30);
             $table->string('return_date', 30);
-            $table->string('accomodation', 50);
-            $table->boolean('flight')->default(false)->nullable($value = true);
-            $table->boolean('car_rent')->default(false)->nullable($value = true);
+            $table->string('accomodation', 100);
+            $table->string('flight', 30);
+            $table->string('car_rent', 30);
             $table->timestamps();
         });
     }

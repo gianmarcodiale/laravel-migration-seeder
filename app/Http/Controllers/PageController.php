@@ -10,6 +10,6 @@ class PageController extends Controller
     {
         //$name = 'Gianmarco';
         //dd($name);
-        return view('homepage')->name('homepage');
+        return view('homepage');
     }
 }
